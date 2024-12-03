@@ -7,7 +7,7 @@ def load_data():
 
     
 
-def solve_day_1(data):
+def solve_day_1_1(data):
     first = list(map(lambda x: x[0], data))
     second = list(map(lambda x: x[1], data))
     first.sort()
@@ -21,7 +21,7 @@ def solve_day_1(data):
 
     return acc
 
-def solve_day_2(data):
+def solve_day_1_2(data):
     first = list(map(lambda x: x[0], data))
     second = list(map(lambda x: x[1], data))
     silly_cache_for_silly_things = {}
@@ -36,5 +36,5 @@ def solve_day_2(data):
 if __name__ == '__main__':
     data = load_data()
     # data = [[3, 4], [4, 3], [2, 5], [1, 3], [3, 9], [3, 3]] # load_data()
-    print("DAY 1 EX 1", solve_day_1(data))
-    print("DAY 1 EX 2", solve_day_2(data))
+    print("DAY 1 EX 1", solve_day_1_1(data))
+    print("DAY 1 EX 2", solve_day_1_2(data))
